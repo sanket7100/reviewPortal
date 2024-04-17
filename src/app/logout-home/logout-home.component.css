@@ -1,0 +1,41 @@
+.circle-container {
+    width: 14rem;
+    height: 14rem;
+    background-color: orange;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    animation: fadeIn 2s;
+}
+
+.circle-content {
+    text-align: center;
+    font-size: 14px;
+    color: black;
+    padding: 5px;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.bg-black {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ngb-rating{
+    cursor: pointer;
+    font-size: 28px; /* Adjust size as needed */
+    color: #FFD700;
+    /* border: 1px solid #ccc; Border color */
+    padding: 2px; /* Adjust padding as needed */
+}
