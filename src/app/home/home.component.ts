@@ -8,11 +8,13 @@ import {MatIconModule} from '@angular/material/icon';
 import { Router, RouterOutlet } from '@angular/router';
 import { Subscription } from 'rxjs';
 import { PortalServiceService } from '../portal.service';
+import {MatMenuModule} from '@angular/material/menu';
+import {MatButtonModule} from '@angular/material/button';
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [RouterOutlet,MatIconModule,FormsModule,CommonModule,MatSelectModule,MatFormFieldModule,DisplayItemsComponent],
+  imports: [RouterOutlet,MatMenuModule,MatButtonModule,MatIconModule,FormsModule,CommonModule,MatSelectModule,MatFormFieldModule,DisplayItemsComponent],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
 })

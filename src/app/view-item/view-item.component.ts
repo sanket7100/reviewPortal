@@ -91,6 +91,8 @@ export class ViewItemComponent {
           this.renderReviews(this.item.itemid);
           alert(`Review Added Successfully`)
           this.showreviewform = false;
+          this.review = "";
+          this.rating = 0;
           this.router.navigate(['viewitem']);
         }else if(res==2){
           alert(`You have already reviewed this item`);
